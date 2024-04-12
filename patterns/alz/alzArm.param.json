@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "contoso"
+      "value": "myorg"
     },
     "platformManagementGroup": {
-      "value": "contoso-platform"
+      "value": "myorg"
     },
     "IdentityManagementGroup": {
-      "value": "contoso-identity"
+      "value": "myorg"
     },
     "managementManagementGroup": {
-      "value": "contoso-management"
+      "value": "myorg"
     },
     "connectivityManagementGroup": {
-      "value": "contoso-connectivity"
+      "value": "myorg"
     },
     "LandingZoneManagementGroup": {
-      "value": "contoso-landingzones"
+      "value": "myorg"
     },
     "enableAMBAConnectivity": {
       "value": "Yes"
@@ -44,22 +44,28 @@
     "policyAssignmentParametersCommon": {
       "value": {
         "ALZMonitorResourceGroupName": {
-          "value": "rg-amba-monitoring-001"
+          "value": "sborg-rg-prd-aue-mgt"
         },
         "ALZMonitorResourceGroupTags": {
           "value": {
-            "Project": "amba-monitoring"
+            "Author": "amba-monitoring",
+            "Application":"amba",
+            "BusinessCriticality": "none",
+            "CostCentre": "none",
+            "CreatedDate": "12/04",
+            "Environment": "dev",
+            "Owner": "Simone"
           }
         },
         "ALZMonitorResourceGroupLocation": {
-          "value": "eastus"
+          "value": "australiaeast"
         }
       }
     },
     "policyAssignmentParametersNotificationAssets": {
       "value": {
         "ALZMonitorActionGroupEmail": {
-          "value": ""
+          "value": "simone.bennett@arkahna.io"
         },
         "ALZLogicappResourceId": {
           "value": ""
